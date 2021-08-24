@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style_selection.css" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
     <link
@@ -30,21 +30,24 @@
     <title>Accueil</title>
   </head>
   <body>
-    <header>
-      <nav class="home-navbar">
-        <div class="leftElement">
-          <div>
-            <h4 class="logo">Logo</h4>
-          </div>
-          <div>
-            <input type="button" value="Connexion" />
-            <input type="button" value="Créer un compte" />
-          </div>
-        </div>
-        <ul>
-          <li><i class="fas fa-bars"></i></li>
-        </ul>
+    <header id="site-header">
+      <a href="#" class="logo">Logo</a>
+
+      <nav class="navbar">
+        <a class="active" href="#home">Accueil</a>
+        <a href="#signUp">Inscription</a>
+        <a href="#logIn">Connexion</a>
+        <a href="#dishes">Nos plats</a>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
       </nav>
+
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+      </div>
     </header>
     <section id="home">
       <div class="home-container">
@@ -124,50 +127,96 @@
       <h2 class="text-center">Nos offres</h2>
       <div class="container-fluid">
         <div class="row reveal">
-          <div class="text-center col-lg-4">
-            <img src="./image/cafeteria.jpg" alt="cafeteria" />
+          <div class="card text-center col-lg">
+            <img
+              src="./image/cafeteria.jpg"
+              class="card-img-top"
+              alt="cafeteria"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a
+                href="#"
+                class="btn"
+                style="background-color: #eef66c; font-weight: bold"
+                >Souscrire</a
+              >
+            </div>
           </div>
-          <div class="text-center col-lg-4">
-            <img src="./image/cafeteria.jpg" alt="cafeteria" />
+          <div class="card text-center col-lg">
+            <img
+              src="./image/cafeteria.jpg"
+              class="card-img-top"
+              alt="cafeteria"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a
+                href="#"
+                class="btn"
+                style="background-color: #eef66c; font-weight: bold"
+                >Souscrire</a
+              >
+            </div>
           </div>
-          <div class="text-center col-lg-4">
-            <img src="./image/cafeteria.jpg" alt="cafeteria" />
+          <div class="card text-center col-lg">
+            <img
+              src="./image/cafeteria.jpg"
+              class="card-img-top"
+              alt="cafeteria"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a
+                href="#"
+                class="btn"
+                style="background-color: #eef66c; font-weight: bold"
+                >Souscrire</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
     <footer>
-      <p>
-        © Christopher Saury <span id="currentYear">Date</span> tout droits
-        réservés
+      <div class="container d-flex justify-content-center">
+        <div class="row">
+          <div class="col-lg d-flex flex-column">
+            <h6>Plan du site</h6>
+            <a href="#">Accueil</a>
+            <a href="#">Inscription</a>
+            <a href="#">Connexion</a>
+            <a href="#">Nos plats</a>
+            <a href="#">Contact</a>
+            <a href="#">F.A.Q.</a>
+          </div>
+          <div class="col-lg d-flex flex-column">
+            <h6>Nos réseaux sociaux</h6>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">Youtube</a>
+            <a href="#">Linkedin</a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center pt-5 pb-1">
+        par Christopher Saury <span class="far fa-copyright"></span>
+        <span id="currentYear"></span> tout droits réservés
       </p>
     </footer>
     <script src="./home.js"></script>
   </body>
 </html>
-
-<!-- <section id="home-explanation">
-    <div class="explanation-container">
-        <h2>Comment ça marche ?</h2>
-        <div class="explanation-wrapper">
-            <div class="exWrapp">
-                <img src="./image/smartphone.jpg" alt="smartphone">
-                <p>
-                    Il vous suffit pour cela de renseigner dans la barre d'adresse le lieux où vous souhaitez être livré.
-                </p>
-            </div>
-            <div class="exWrapp">
-                <img src="./image/menu.jpg" alt="restaurant menu">
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero blanditiis nobis delectus repellendus? Facere eveniet nobis impedit, ratione, deleniti obcaecati amet ullam numquam cumque, accusantium molestiae labore. Accusamus, ducimus deserunt.
-                </p>
-            </div>
-            <div class="exWrapp">
-                <img src="./image/food-delivery.jpg" alt="food delivery">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aperiam quam totam eum sequi reprehenderit corporis. Unde quam reiciendis a, neque sapiente, quia velit quasi inventore harum consectetur ab vero?
-                </p>
-            </div>
-        </div>
-    </div>
-</section> -->
