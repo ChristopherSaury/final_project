@@ -1,3 +1,5 @@
+//SLIDESHOW
+
 // on commence par sélectionner les class .home-slideshow (le containeur des images) et
 //.home-slideshow-image qui permet de sélectionner toutes les images
 
@@ -7,7 +9,7 @@ const slideshowImages = document.querySelectorAll(
 
 // On stock dans des variables le délai avant chaque transition et une valeurs index à
 // partir de 0 qui va nous permettre de commencer à  partir la première image
-const nextImageDelay = 6000;
+const nextImageDelay = 4000;
 let currentImageCounter = 0;
 
 // on change l'opacité de 0 à 1 pour chaque transition pour faire apparaître une nouvelle image
@@ -22,7 +24,8 @@ function nextImage() {
   slideshowImages[currentImageCounter].style.opacity = 1;
 }
 
-// Partie reveal on scroll
+// PARTIE REVEAL ON SCROLL
+
 // On commence par ajouter un listener qui va écouter le scroll sur la page puis appeler la fonction reveal
 window.addEventListener("scroll", reveal);
 
@@ -40,3 +43,7 @@ function reveal() {
     }
   }
 }
+
+//footer display date
+let currentYear = new Date().getUTCFullYear();
+document.getElementById("currentYear").innerHTML = currentYear;
