@@ -1,49 +1,3 @@
-//NAVBAR
-// Récupération des blocs
-let mainMenu = document.querySelector("#menu");
-let burgerMenu = document.querySelector("#menu-burger");
-let closingDivMenu = document.querySelector(".closing-bkg");
-
-burgerMenu.addEventListener("click", function(){
-	console.log("clicked");
-	if (mainMenu.getAttribute("class") != "visible" && closingDivMenu.getAttribute != "bkg-active"){
-		mainMenu.setAttribute("class", "visible");
-		closingDivMenu.setAttribute("class", "bkg-active");
-	}else{
-		mainMenu.setAttribute("class", "invisible");
-		burgerMenu.setAttribute("class", "closing-bkg");
-	}
-})
-
-closingDivMenu.addEventListener("click", function(){
-	console.log("bkg clicked");
-	if(closingDivMenu.getAttribute("class") != "closing-bkg" && mainMenu.getAttribute("class") != "invisible"){
-		closingDivMenu.setAttribute("class", "closing-bkg");
-		mainMenu.setAttribute("class", "invisible");
-	}
-	
-})
-
-// closingDivMenu.addEventListener(clickedEvent, function(evt){
-// 	console.log(clickedEvent);
-// 	if(!this.getAttribute("class")) {
-// 		this.setAttribute("class", "clicked");
-// 	} else {
-// 		this.removeAttribute("class");
-// 	}
-	
-
-// }, false)
-
-
-
-
-
-
-
-
-
-
 //SLIDESHOW
 
 // on commence par sélectionner les class .home-slideshow (le containeur des images) et
@@ -89,3 +43,7 @@ function reveal() {
     }
   }
 }
+
+//footer display date
+let currentYear = new Date().getUTCFullYear();
+document.getElementById("currentYear").innerHTML = currentYear;
