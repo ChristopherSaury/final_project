@@ -13,7 +13,8 @@
   box-sizing: border-box;
 }
 
-.home-navbar {
+/* Navbar d'origine debut*/
+/* .home-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,8 +60,156 @@
 
 .home-navbar ul {
   margin-right: 5%;
+} */
+/* navbar d'origine fin */
+
+/* Menu burger */
+#menu-burger {
+  position:absolute;
+  top:2.5em; right:3.5em;
+  display:inline-block;
+  cursor:pointer;
+}
+#menu-burger .bar1,
+#menu-burger .bar2,
+#menu-burger .bar3 {
+  width:32px;
+  height:5px;
+  background-color:#F1F1F1;
+  margin:6px 0;
+  transition:0.4s;
+}
+#menu-burger:hover {
+  opacity:.75;
+  transition:.5s;
+}
+#menu-burger.clicked .bar1 {
+  -webkit-transform:rotate(-45deg) translate(-9px, 6px);
+   transform:rotate(-45deg) translate(-9px, 6px);
+}
+#menu-burger.clicked .bar2 {
+  opacity: 0;
+}
+#menu-burger.clicked .bar3 {
+  -webkit-transform:rotate(45deg) translate(-8px, -8px);
+  transform:rotate(45deg) translate(-8px, -8px);
 }
 
+/* Main menu (slide) */
+#menu {
+  position:fixed;
+  z-index:9999; right:-25%;
+  top:auto; background:var(--third);
+  padding:4em 2em; width:25%;
+  min-height:100%; box-shadow:1px 0 1px #868382;
+}
+#menu ul li {
+  list-style:none;
+}
+#menu ul li a {
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  font-weight:700; background:#2c3e50;
+  transition:background .5s;
+  padding:1em; text-align:center;
+  margin-bottom:.5em; box-shadow:1px 1px 0 var(--fourth)
+}
+#menu ul li a:hover {
+  background:var(--first);
+  transition:background .5s;
+}
+#menu.visible {
+  animation:.5s slideLeft ease-in forwards;
+  transition-delay:0;
+}
+#menu.invisible {
+  animation:1s slideRight ease-out forwards;
+  transition-delay:0;
+}
+.bkg-active{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 500;
+  opacity: 0.4;
+}
+
+/* Animations pour le menu slide */
+@keyframes slideLeft {
+	from {right:-25%;}
+	to {right:0%;}
+}
+@-webkit-keyframes slideLeft {
+	from {right:-25%;}
+	to {right:0%;}
+}
+@keyframes slideRight {
+	from {right:0%;}
+	to {right:-25%;}
+}
+@-webkit-keyframes slideRight {
+	from {right:0%;}
+	to {right:-25%;}
+}
+
+/* Responsive design */
+@media (max-width:1024px) {
+	#menu {
+    left:-50%;
+    width:50%;
+  }
+	#menu-burger.clicked {
+    position:fixed;
+  }
+
+	/* Animations pour le menu slide */
+	@keyframes slideRight {
+		from {left:-50%;}
+		to {left:0%;}
+	}
+	@-webkit-keyframes slideRight {
+		from {left:-50%;}
+		to {left:0%;}
+	}
+	@keyframes slideLeft {
+		from {left:0%;}
+		to {left:-50%;}
+	}
+	@-webkit-keyframes slideLeft {
+		from {left:0%;}
+		to {left:-50%;}
+	}
+}
+@media (max-width:600px) {
+	#menu-burger {top:1em; right:2em; z-index:9999;}
+	#menu {left:-100%; width:100%;}
+
+	/* Animations pour le menu slide */
+	@keyframes slideRight {
+		from {left:-100%;}
+		to {left:0%;}
+	}
+	@-webkit-keyframes slideRight {
+		from {left:-100%;}
+		to {left:0%;}
+	}
+	@keyframes slideLeft {
+		from {left:0%;}
+		to {left:-100%;}
+	}
+	@-webkit-keyframes slideLeft {
+		from {left:0%;}
+		to {left:-100%;}
+	}
+}
+
+
+
+
+
+/************ FIN NAVBAR n°2 *************/
 #home {
   background-color: var(--first);
   color: white;
@@ -148,7 +297,7 @@ button {
   color: var(--first);
   font-family: "Archivo", sans-serif;
   font-weight: 800;
-  padding: 5% 0 4% 0;
+  padding: 2% 0 5% 0;
 }
 #home-explanation h4 {
   font-size: 28px;
@@ -162,8 +311,8 @@ button {
   font-weight: 500;
 }
 #home-explanation img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 4%;
 }
 
@@ -172,7 +321,6 @@ button {
 }
 
 #home-offer .row img {
-  width: 300px;
   height: 400px;
 }
 
@@ -183,7 +331,9 @@ button {
   font-weight: 800;
   padding: 3% 0 5% 0;
 }
-
+#home-offer .row .card {
+  margin: 0 5% 5% 5%;
+}
 .reveal {
   position: relative;
   transform: translateY(150px);
@@ -195,7 +345,7 @@ button {
   transform: translateY(0px);
   opacity: 1;
 }
-
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /* .explanation-container{
     display: flex;
     justify-content: center;
