@@ -78,3 +78,25 @@ header .icons a:hover {
 header .icons #menu-bars {
   display: none;
 }
+
+#dishes {
+  padding: 100px 0;
+}
+.card {
+  font-size: 14px;
+}
+
+/***************************** Footer *********************/
+
+footer {
+  color: #fff;
+  background: var(--first);
+  padding: 2% 0 2% 0;
+}
+footer .container a {
+  color: #fff;
+}
+
+footer p {
+  margin-bottom: 0;
+}
