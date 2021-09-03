@@ -1,54 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-      crossorigin="anonymous"
-    ></script>
-    <title>Accueil</title>
-  </head>
-  <body>
-    <header id="site-header">
-      <a href="#" class="logo">Logo</a>
-
-      <nav class="navbar">
-        <a class="active" href="./index.html">Accueil</a>
-        <a href="./sign_up.html">Inscription</a>
-        <a href="./login.html">Connexion</a>
-        <a href="./selection_page.html">Nos plats</a>
-        <a href="./contact.html">Contact</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-
-      <div class="icons">
-        <i class="fas fa-bars" id="menu-bars"></i>
-        <i class="fas fa-search" id="search-icon"></i>
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart"></a>
-      </div>
-    </header>
+<?php include VIEWS . '/parts/nav.php' ;?>
+<style>
+        <?php include ASSETS . '/css/nav.css'; 
+              include ASSETS . '/css/style.css';
+              include ASSETS . '/css/footer.css';
+         ?>
+    </style>
     <section id="home">
       <div class="home-container">
         <div class="home-introduction">
@@ -67,27 +23,27 @@
         <div class="home-slideshow">
           <img
             class="home-slideshow-image"
-            src="./image/slider/pexels-caleb-oquendo-3023476.jpg"
+            src="https://via.placeholder.com/150C/O"
             alt="burger"
           />
           <img
             class="home-slideshow-image"
-            src="./image/slider/pexels-creative-vix-375467.jpg"
+            src="https://via.placeholder.com/150C/O"
             alt="pizza on desk"
           />
           <img
             class="home-slideshow-image"
-            src="./image/slider/pexels-norma-mortenson-4393527.jpg"
+            src="https://via.placeholder.com/150C/O"
             alt="man eat a pizza"
           />
           <img
             class="home-slideshow-image"
-            src="./image/slider/khalid-boutchich-N-HvSJ9M3-k-unsplash.jpg"
+            src="https://via.placeholder.com/150C/O"
             alt="tacos"
           />
           <img
             class="home-slideshow-image"
-            src="./image/slider/tareq-ismail-tEg7EK-ok3E-unsplash.jpg"
+            src="https://via.placeholder.com/150C/O"
             alt="fried chicken"
           />
         </div>
@@ -98,7 +54,7 @@
       <div class="container-fluid">
         <div class="row pb-5 reveal">
           <div class="text-center col-lg-4">
-            <img src="./image/slider/smartphone.jpg" alt="smartphone" />
+            <img src="https://via.placeholder.com/150C/O" alt="smartphone" />
             <h4 class="mt-2">Adresse</h4>
             <p class="mt-4">
               Je renseigne 'addresse à laquelle je souhaite être livré dans la
@@ -106,14 +62,14 @@
             </p>
           </div>
           <div class="text-center col-lg-4">
-            <img src="./image/slider/menu.jpg" alt="restaurant menu" />
+            <img src="https://via.placeholder.com/150C/O" alt="restaurant menu" />
             <h4 class="mt-2">Je choisi</h4>
             <p class="mt-4">
               Je parcours le site et je sélectionne tous ce qui me fait envie.
             </p>
           </div>
           <div class="text-center col-lg-4">
-            <img src="./image/slider/food-delivery.jpg" alt="food delivery" />
+            <img src="https://via.placeholder.com/150C/O" alt="food delivery" />
             <h4 class="mt-2">Paiement et livraison</h4>
             <p class="mt-4">
               Je valide mon panier, je suis les instructions pour le paiement.
@@ -129,7 +85,7 @@
         <div class="row reveal">
           <div class="card text-center col-lg">
             <img
-              src="./image/slider/cafeteria.jpg"
+              src="https://via.placeholder.com/150C/O"
               class="card-img-top"
               alt="cafeteria"
             />
@@ -149,7 +105,7 @@
           </div>
           <div class="card text-center col-lg">
             <img
-              src="./image/slider/cafeteria.jpg"
+              src="https://via.placeholder.com/150C/O"
               class="card-img-top"
               alt="cafeteria"
             />
@@ -169,7 +125,7 @@
           </div>
           <div class="card text-center col-lg">
             <img
-              src="./image/slider/cafeteria.jpg"
+              src="https://via.placeholder.com/150C/O"
               class="card-img-top"
               alt="cafeteria"
             />
@@ -190,33 +146,6 @@
         </div>
       </div>
     </section>
-    <footer>
-      <div class="container d-flex justify-content-center">
-        <div class="row">
-          <div class="col-lg d-flex flex-column">
-            <h6>Plan du site</h6>
-            <a href="#">Accueil</a>
-            <a href="#">Inscription</a>
-            <a href="#">Connexion</a>
-            <a href="#">Nos plats</a>
-            <a href="#">Contact</a>
-            <a href="#">F.A.Q.</a>
-          </div>
-          <div class="col-lg d-flex flex-column">
-            <h6>Nos réseaux sociaux</h6>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-            <a href="#">Facebook</a>
-            <a href="#">Youtube</a>
-            <a href="#">Linkedin</a>
-          </div>
-        </div>
-      </div>
-      <p class="text-center pt-5 pb-1">
-        par Christopher Saury <span class="far fa-copyright"></span>
-        <span id="currentYear"></span> tout droits réservés
-      </p>
-    </footer>
-    <script src="./home.js"></script>
-  </body>
-</html>
+
+    <?php include VIEWS . '/parts/footer.php' ;?>
+    

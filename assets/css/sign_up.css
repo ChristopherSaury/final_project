@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500&display=swap");
+
+:root {
+  --first: #194833;
+  --second: #ffcf75;
+  --third: #fff0bc;
+  --fourth: #eef66c;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+}
+html {
+  overflow-x: hidden;
+}
+
+
+/* #dishes {
+  padding: 100px 0;
+}
+.card {
+  font-size: 14px;
+} */
+
+/******** Login section **************************/
+
+#logIn {
+  background-color: var(--third);
+  padding: 12% 0;
+}
+#logIn form {
+  color: #fff;
+  background: var(--first);
+  padding: 5%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 80px 32px;
+}
+.form-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+#logIn form h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#logIn form input[type="email"],
+#logIn form input[type="password"] {
+  padding: 16px;
+  margin-bottom: 32px;
+  border-radius: 4px;
+}
+
+.btn-form-wrapper input {
+ width: 100%;
+ height: auto;
+}
+

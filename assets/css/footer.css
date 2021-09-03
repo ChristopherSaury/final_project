@@ -1,0 +1,12 @@
+footer {
+    color: #fff;
+    background: var(--first);
+    padding: 2% 0 2% 0;
+  }
+  footer .container a {
+    color: #fff;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
