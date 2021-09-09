@@ -10,20 +10,20 @@
       <h2 class="text-center mb-4">Nous contacter</h2>
       <div class="form-row">
         <div class="form-group col-lg">
-          <label for="lastname">Nom</label>
+          <label for="lastname">Nom :</label>
           <input type="text" class="form-control" id="lastname">
         </div>
         <div class="form-group col-lg">
-          <label for="firstname">Prénom</label>
+          <label for="firstname">Prénom :</label>
           <input type="text" class="form-control" id="firstname">
         </div>
       </div>
       <div class="form-group">
-        <label for="email">Email</label>
+        <label for="email">Email :</label>
         <input type="email" class="form-control" id="email">
       </div>
       <div class="form-group">
-        <label for="subject">Sujet</label>
+        <label for="subject">Sujet :</label>
         <input type="text" class="form-control" id="subject">
       </div>
       <div class="custom-file mb-3">

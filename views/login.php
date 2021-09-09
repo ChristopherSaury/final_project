@@ -9,7 +9,7 @@
       <div class="row">
         <div class="form-wrap col-lg">
           <!-- <a href="#">Logo</a> -->
-          <form action="#" method="#">
+          <form action="<?= url('connexion-handler'); ?>" method="post">
             <h2 class="text-center">Se connecter</h2>
             <div class="form-group">
               <label for="email">Email :</label>
@@ -17,8 +17,10 @@
                 type="email"
                 class="form-control"
                 id="email"
+                name="email"
                 placeholder="Saisissez votre email"
               />
+              
             </div>
             <div class="form-group">
               <label for="password">Mot de passe :</label>
@@ -26,6 +28,7 @@
                 type="password"
                 class="form-control"
                 id="password"
+                name="password"
                 placeholder="Saisissez votre mot de passe"
               />
             </div>
@@ -41,7 +44,7 @@
               <small><a style="color: #fff;" href="#">Mot de passe oublié ?</a></small>
             </div>
             <div class="d-flex justify-content-center mt-1">
-              <small><a style="color: #fff;" href="./sign_up.html">Créer un compte</a></small>
+              <small><a style="color: #fff;" href="<?= url('inscription'); ?>">Créer un compte</a></small>
             </div>
           </form>
         </div>
