@@ -13,14 +13,13 @@
   padding: 0px;
   box-sizing: border-box;
   text-decoration: none;
-  text-transform: capitalize;
   outline: none;
   border: none;
 }
 html {
   overflow-x: hidden;
 }
-/************ FIN NAVBAR n°2 *************/
+
 #home {
   background-color: var(--first);
   color: white;

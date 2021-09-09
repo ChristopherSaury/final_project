@@ -13,7 +13,6 @@
   padding: 0px;
   box-sizing: border-box;
   text-decoration: none;
-  text-transform: capitalize;
   outline: none;
   border: none;
 }
@@ -21,21 +20,11 @@ html {
   overflow-x: hidden;
 }
 
-
-/* #dishes {
-  padding: 100px 0;
-}
-.card {
-  font-size: 14px;
-} */
-
-/******** Login section **************************/
-
-#logIn {
+#signUp {
   background-color: var(--third);
   padding: 12% 0;
 }
-#logIn form {
+#signUp form {
   color: #fff;
   background: var(--first);
   padding: 5%;
@@ -51,15 +40,15 @@ html {
   justify-content: center;
 }
 
-#logIn form h2 {
+#signUp form h2 {
   margin-bottom: 40px;
   font-size: 30px;
   font-weight: 400;
   text-align: center;
 }
 
-#logIn form input[type="email"],
-#logIn form input[type="password"] {
+#signUp form input[type="email"],
+#signUp form input[type="password"] {
   padding: 16px;
   margin-bottom: 32px;
   border-radius: 4px;

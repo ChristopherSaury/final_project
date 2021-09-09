@@ -13,22 +13,12 @@
   padding: 0px;
   box-sizing: border-box;
   text-decoration: none;
-  text-transform: capitalize;
   outline: none;
   border: none;
 }
 html {
   overflow-x: hidden;
 }
-
-/* #dishes {
-  padding: 100px 0;
-}
-.card {
-  font-size: 14px;
-} */
-
-/******** Login section **************************/
 
 #logIn {
   background-color: var(--third);
